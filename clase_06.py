@@ -101,3 +101,45 @@ else:
 ##########################################################################
 # CONJUNTOS
 ##########################################################################
+
+mi_conjunto = set()
+mi_otro_conjunto = {1,2,3,4}
+mi_conjunto_desde_una_lista = set([1,3,4,5,6])
+mi_dict = {}
+
+print(type(mi_conjunto))
+print(type(mi_otro_conjunto))
+print(type(mi_conjunto_desde_una_lista))
+print(type(mi_dict))
+
+
+# conjunto a partir de lista
+mi_conjunto = set([1,2,3,1,2,3,1,2,3])
+print(mi_conjunto)
+
+# agregar elementos
+mi_conjunto.add(90)
+print(mi_conjunto)
+
+print(90 in mi_conjunto)
+print(99 in mi_conjunto)
+
+mi_conjunto.update([99])
+print(mi_conjunto)
+print(99 in mi_conjunto)
+
+print("*" * 60)
+mi_conjunto.update([1,2,3,4,5,6,7,8,9,10])
+print(mi_conjunto)
+
+mi_conjunto.remove(10)
+mi_conjunto.discard(7)
+print(mi_conjunto)
+
+mi_variable_aleatoria = mi_conjunto.pop()
+print(f"mi uno es: {mi_variable_aleatoria}")
+
+
+mi_conjunto.clear()
+
+print(mi_conjunto)
