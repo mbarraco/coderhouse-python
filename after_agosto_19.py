@@ -150,6 +150,7 @@ dicc = {"clave1":['c','a','b'], "clave2":['casa','auto','barco'], "clave3":[2,1,
 def diccionario_ord(dic, clave, des):
     print(f"entre asi {dic}")
     valor = dic.get(clave)
+    valor.sort(reverse=des)
     dic[clave] = valor
     return dic
 
