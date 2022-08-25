@@ -60,3 +60,28 @@ res = mi_funcion("david", "bowie")
 print(f"el resultado es: {res}")
 >> el resultado es: {'V', 'B', 'O', 'D', 'E', 'A', 'I', 'W'}
 ```
+
+8. Implementar 5 casos de test para una función que: dado un texto (`str`), si el mismo tiene más de 10 caracteres , tiene que devolver el mismo texto pero en mayúsculas. En otro caso, si tiene un número par de caracteres tiene que devolver un conjunto con todos los caracteres utilizados y si tiene un numero impar de caracteres tiene que devolver el número de caracteres. Por ejemplo, si la función se llama `mi_funcion`, dos tests podrían ser:
+
+```python
+
+def mi_funcion(una_palabra):
+    return None
+
+# Test 1
+resultado = mi_funcion("hoy es un dia soleado en Buenos Aires")
+if resultado == "HOY ES UN DIA SOLEADO EN BUENOS AIRES":
+    print("test correcto")
+else:
+    print("test incorrecto")
+
+# Test 2
+resultado = mi_funcion("a1b2")
+if resultado == {"a", "1", "b", "2"}:
+    print("test correcto")
+else:
+    print("test incorrecto")
+
+```
+
+9. Implementar una función que pase todos los casos de tests escritos en el punto anterior.
