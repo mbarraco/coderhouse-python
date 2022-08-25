@@ -92,6 +92,7 @@ def calcular_si_es_bisiesto(year):  # year es año en inglés
         return False
 
 
+
 # 400 es bisiesto (porque 400 es multiplo de 400)
 es_bisiesto = calcular_si_es_bisiesto(400)
 if es_bisiesto == True:
@@ -134,3 +135,38 @@ if es_bisiesto == False:
     print("correcto")
 else:
     print("incorrecto")
+
+
+#
+# Ejercicio extra con ideas para el entregable
+#
+# Escribir una funcion que me diga si un numero es impar, pero que si el numero es mayor a 100 entonces me responda lo contrario
+def calcular_si_es_impar(un_numero):
+
+    if un_numero > 100:
+        es_mayor_a_100 = True
+    else:
+        es_mayor_a_100 = False
+    
+
+    if un_numero % 2 != 0:
+        es_impar =  True
+    else:
+        es_impar = False
+
+    if es_mayor_a_100:
+        return not es_impar
+    else:
+        return es_impar
+
+
+assert calcular_si_es_impar(3) == True
+assert calcular_si_es_impar(4) == False
+assert calcular_si_es_impar(101) == False
+assert calcular_si_es_impar(500) == True
+assert calcular_si_es_impar(17) == True
+assert calcular_si_es_impar(18) == False
+
+print("*" * 90)
+print("TODOS LOS CASOS DE TEST PASARON")
+print("*" * 90)
