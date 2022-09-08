@@ -106,6 +106,6 @@ class Atleta:
 
 
 
-atleta_1 = Atleta("mariano", "lopez", 170, 74)
+atleta_1 = Atleta("mariano", "lopez", 1.7, 74)
 
 print(atleta_1.obtener_indice_masa_corporal())
